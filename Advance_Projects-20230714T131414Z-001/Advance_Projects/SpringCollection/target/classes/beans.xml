@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+<bean id ="p1" class="com.bean.Person">
+<property name="pname" value="heer"/>
+<property name="address" value="gandhinagar"/>
+<property name="age" value="27"/>
+</bean>
+<bean id="p2" class="com.bean.Customer">
+<property name="lists">
+<list>
+<value>shraddha</value>
+<value>gavada</value>
+<value>28</value>
+<ref bean="p1"/>
+<bean  class="com.bean.Person">
+<property name="pname" value="anchal"/>
+<property name="address" value="vavol"/>
+<property name="age" value="23"/>
+</bean>
+
+</list>
+
+</property>
+   
+
+
+
+
+</bean>
+
+</beans>

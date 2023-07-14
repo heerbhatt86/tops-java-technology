@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+<bean id="phone" class="com.bean.Phone">
+<property name="pno" value="76984526363"/>
+
+</bean>
+<bean id="Person" class="com.bean.Person">
+<property name="pname" value="heer"/>
+<property name="phone" ref="phone"></property>
+
+
+</bean>
+
+</beans>
